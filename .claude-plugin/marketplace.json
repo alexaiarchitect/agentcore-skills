@@ -1,0 +1,15 @@
+{
+  "name": "alexaiarchitect-agentcore",
+  "description": "Claude Code skills for Amazon Bedrock AgentCore, IaC-first.",
+  "owner": {
+    "name": "Alex",
+    "email": "alex@alexaiarchitect.com"
+  },
+  "plugins": [
+    {
+      "name": "agentcore",
+      "source": "./",
+      "description": "Create, review, deploy, verify, observe and cost-manage Amazon Bedrock AgentCore resources."
+    }
+  ]
+}

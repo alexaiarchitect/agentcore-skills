@@ -1,0 +1,54 @@
+{
+ "Traces": [
+  {
+   "Id": "1-shallow-0",
+   "Duration": 0.12,
+   "Segments": [
+    {
+     "Id": "s0",
+     "Document": "{\"id\": \"s0\", \"name\": \"example-vault-mcp\", \"origin\": \"AWS::Lambda::Function\", \"start_time\": 1791273600.0, \"end_time\": 1791273600.12}"
+    }
+   ]
+  },
+  {
+   "Id": "1-shallow-1",
+   "Duration": 0.12,
+   "Segments": [
+    {
+     "Id": "s1",
+     "Document": "{\"id\": \"s1\", \"name\": \"example-vault-mcp\", \"origin\": \"AWS::Lambda::Function\", \"start_time\": 1791273600.0, \"end_time\": 1791273600.12}"
+    }
+   ]
+  },
+  {
+   "Id": "1-shallow-2",
+   "Duration": 0.12,
+   "Segments": [
+    {
+     "Id": "s2",
+     "Document": "{\"id\": \"s2\", \"name\": \"example-vault-mcp\", \"origin\": \"AWS::Lambda::Function\", \"start_time\": 1791273600.0, \"end_time\": 1791273600.12}"
+    }
+   ]
+  },
+  {
+   "Id": "1-shallow-3",
+   "Duration": 0.12,
+   "Segments": [
+    {
+     "Id": "s3",
+     "Document": "{\"id\": \"s3\", \"name\": \"example-vault-mcp\", \"origin\": \"AWS::Lambda::Function\", \"start_time\": 1791273600.0, \"end_time\": 1791273600.12}"
+    }
+   ]
+  },
+  {
+   "Id": "1-shallow-4",
+   "Duration": 0.12,
+   "Segments": [
+    {
+     "Id": "s4",
+     "Document": "{\"id\": \"s4\", \"name\": \"example-vault-mcp\", \"origin\": \"AWS::Lambda::Function\", \"start_time\": 1791273600.0, \"end_time\": 1791273600.12}"
+    }
+   ]
+  }
+ ]
+}

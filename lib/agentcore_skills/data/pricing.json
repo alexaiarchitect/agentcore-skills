@@ -1,0 +1,38 @@
+{
+  "schema": "agentcore-skills.pricing/1",
+  "checked": "2026-10-05",
+  "source": "https://aws.amazon.com/bedrock/agentcore/pricing/",
+  "currency": "USD",
+  "region_note": "The page publishes one rate card for commercial regions and names US East (N. Virginia) in its examples; it does not state per-region rates. Treat every figure as a list-price estimate and check the page for your region.",
+  "runtime": {
+    "microvm_v2": {"vcpu_hour": 0.1276, "gb_hour": 0.0169, "billing": "per second on actual consumption, 1-second minimum; CPU scales to zero during I/O wait; memory reclaimed after 120 s idle"},
+    "microvm_v2_committed": {"vcpu_hour": 0.0997, "gb_hour": 0.0132, "note": "committed baseline, launching October 2026"},
+    "microvm_v1": {"vcpu_hour": 0.0895, "gb_hour": 0.00945},
+    "instances": {"note": "EC2 instance price plus an AgentCore management fee (12% standard, 7.8% GPU); not modelled here"}
+  },
+  "gateway": {
+    "invocations_per_1000": 0.005,
+    "search_per_1000": 0.025,
+    "tools_indexed_per_100_month": 0.02,
+    "note": "API invocations such as ListTools, InvokeTool and Ping. Lambda, HTTP and other target costs are billed by those services."
+  },
+  "identity": {
+    "token_or_key_requests_per_1000": 0.010,
+    "free_via_runtime_or_gateway": true
+  },
+  "memory": {
+    "short_term_per_1000_events": {"price": 0.25, "until": "2026-10-05"},
+    "short_term_ingest_per_gb": {"price": 1.00, "from": "2026-10-06"},
+    "short_term_retrieve_per_gb": {"price": 0.20, "from": "2026-10-06"},
+    "long_term_records_per_1000_month_builtin": 0.75,
+    "long_term_records_per_1000_month_custom": 0.25,
+    "long_term_retrievals_per_1000": 0.50,
+    "note": "Custom/override strategies also incur model usage in your account."
+  },
+  "code_interpreter": {"vcpu_hour": 0.0895, "gb_hour": 0.00945},
+  "browser": {"vcpu_hour": 0.0895, "gb_hour": 0.00945},
+  "evaluations": {"builtin_input_per_1000_tokens": 0.0024, "builtin_output_per_1000_tokens": 0.012},
+  "policy": {"per_request": 0.000025},
+  "observability": {"note": "Charged at Amazon CloudWatch and X-Ray prices; not modelled here."},
+  "free_tier": {"note": "New AWS customers receive up to $200 in Free Tier credits (account-level, not AgentCore-specific)."}
+}

@@ -1,0 +1,14 @@
+[project]
+name = "agentcore-skills"
+version = "0.2.0"
+description = "Claude Code plugin: skills for Amazon Bedrock AgentCore, IaC-first"
+requires-python = ">=3.10"
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest>=8"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q -p no:cacheprovider"
+filterwarnings = ["error::DeprecationWarning"]

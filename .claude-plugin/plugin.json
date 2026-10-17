@@ -1,0 +1,26 @@
+{
+  "name": "agentcore",
+  "description": "Create, review, deploy, verify, observe and cost-manage Amazon Bedrock AgentCore resources (Runtime, Gateway, Identity, Memory, built-in tools, Observability, Evaluations), IaC-first: Terraform modules with write plans and dry runs, CDK and the AgentCore CLI as alternatives. Deterministic stdlib checks with stable finding ids (ACR review, gateway, identity, runtime contract, memory, deploy, verify, observe, cost, CI policy), a gateway-in-front-of-what-you-have flow with Cognito JWT and MCP revision pinning (2025-11-25 and the opt-in stateless 2026-07-28), X-Ray/OpenTelemetry trace analysis against a latency budget, an offline cost model, and plan-only CI gates. Nothing touches AWS until you run the emitted commands.",
+  "version": "0.2.0",
+  "author": {
+    "name": "Alex",
+    "email": "alex@alexaiarchitect.com"
+  },
+  "homepage": "https://github.com/alexaiarchitect/agentcore-skills",
+  "repository": "https://github.com/alexaiarchitect/agentcore-skills",
+  "license": "Apache-2.0",
+  "keywords": [
+    "aws",
+    "bedrock",
+    "agentcore",
+    "mcp",
+    "terraform",
+    "x-ray",
+    "opentelemetry",
+    "cognito",
+    "agents"
+  ],
+  "experimental": {
+    "evals": "plugin-evals"
+  }
+}

@@ -1,0 +1,39 @@
+{
+ "tools": [
+  {
+   "name": "list_categories",
+   "description": "x",
+   "inputSchema": {
+    "type": "object"
+   }
+  },
+  {
+   "name": "query_records",
+   "description": "x",
+   "inputSchema": {
+    "type": "object"
+   }
+  },
+  {
+   "name": "export records",
+   "description": "space in the name",
+   "inputSchema": {
+    "type": "object"
+   }
+  },
+  {
+   "name": "xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+   "description": "far too long once prefixed",
+   "inputSchema": {
+    "type": "object"
+   }
+  },
+  {
+   "name": "query_records",
+   "description": "duplicate",
+   "inputSchema": {
+    "type": "object"
+   }
+  }
+ ]
+}

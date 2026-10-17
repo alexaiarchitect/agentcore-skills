@@ -1,0 +1,57 @@
+{
+  "schema": "agentcore-skills.terraform-coverage/1",
+  "checked": "2026-10-05",
+  "source": "https://github.com/hashicorp/terraform-provider-aws (website/docs/r/bedrockagentcore_*.html.markdown and CHANGELOG.md on main; 6.65.0 unreleased at the top)",
+  "cfn_source": "https://docs.aws.amazon.com/AWSCloudFormation/latest/TemplateReference/AWS_BedrockAgentCore.html",
+  "hashicorp_aws": [
+    "aws_bedrockagentcore_agent_runtime",
+    "aws_bedrockagentcore_agent_runtime_endpoint",
+    "aws_bedrockagentcore_api_key_credential_provider",
+    "aws_bedrockagentcore_browser",
+    "aws_bedrockagentcore_browser_profile",
+    "aws_bedrockagentcore_code_interpreter",
+    "aws_bedrockagentcore_evaluator",
+    "aws_bedrockagentcore_gateway",
+    "aws_bedrockagentcore_gateway_rule",
+    "aws_bedrockagentcore_gateway_target",
+    "aws_bedrockagentcore_harness",
+    "aws_bedrockagentcore_memory",
+    "aws_bedrockagentcore_memory_strategy",
+    "aws_bedrockagentcore_oauth2_credential_provider",
+    "aws_bedrockagentcore_online_evaluation_config",
+    "aws_bedrockagentcore_policy",
+    "aws_bedrockagentcore_policy_engine",
+    "aws_bedrockagentcore_registry",
+    "aws_bedrockagentcore_resource_policy",
+    "aws_bedrockagentcore_token_vault_cmk",
+    "aws_bedrockagentcore_workload_identity"
+  ],
+  "introduced_in": {
+    "aws_bedrockagentcore_evaluator": "6.51.0",
+    "aws_bedrockagentcore_registry": "6.52.0",
+    "aws_bedrockagentcore_browser_profile": "6.54.0"
+  },
+  "notable_arguments": {
+    "aws_bedrockagentcore_gateway.protocol_configuration.mcp.supported_versions": "documented on main 2026-10-05; the release that introduced it was not found in CHANGELOG.md - confirm with `terraform providers schema -json`",
+    "aws_bedrockagentcore_gateway.protocol_configuration.mcp.search_type": "SEMANTIC; settable only at creation (service rule)",
+    "aws_bedrockagentcore_gateway_target.target_configuration.mcp.mcp_server.listing_mode": "6.50.0",
+    "aws_bedrockagentcore_gateway_target.target_configuration.mcp.mcp_server.mcp_tool_schema": "6.59.0",
+    "aws_bedrockagentcore_gateway_target.target_configuration.http.passthrough": "6.63.0",
+    "aws_bedrockagentcore_gateway_target.target_configuration.mcp.connector": "6.63.0",
+    "aws_bedrockagentcore_agent_runtime.protocol_configuration.server_protocol=AGUI": "6.50.0",
+    "aws_bedrockagentcore_agent_runtime.private_endpoint": "6.55.0",
+    "aws_bedrockagentcore_memory_strategy.namespace_templates": "6.57.1",
+    "aws_bedrockagentcore_memory_strategy.configuration.self_managed_configuration": "6.62.0"
+  },
+  "fallback": {
+    "AWS::BedrockAgentCore::CapacityProvider": {"awscc": "awscc_bedrockagentcore_capacity_provider", "cli": "aws bedrock-agentcore-control create-capacity-provider"},
+    "AWS::BedrockAgentCore::ConfigurationBundle": {"awscc": "awscc_bedrockagentcore_configuration_bundle", "cli": null},
+    "AWS::BedrockAgentCore::Dataset": {"awscc": "awscc_bedrockagentcore_dataset", "cli": null},
+    "AWS::BedrockAgentCore::GatewayRateLimit": {"awscc": "awscc_bedrockagentcore_gateway_rate_limit", "cli": null},
+    "AWS::BedrockAgentCore::HarnessEndpoint": {"awscc": "awscc_bedrockagentcore_harness_endpoint", "cli": null},
+    "AWS::BedrockAgentCore::PaymentConnector": {"awscc": "awscc_bedrockagentcore_payment_connector", "cli": null},
+    "AWS::BedrockAgentCore::PaymentCredentialProvider": {"awscc": "awscc_bedrockagentcore_payment_credential_provider", "cli": null},
+    "AWS::BedrockAgentCore::PaymentManager": {"awscc": "awscc_bedrockagentcore_payment_manager", "cli": null}
+  },
+  "fallback_note": "awscc resource names follow the provider's CloudFormation-type naming convention and were not individually confirmed against the awscc registry; run `terraform providers schema -json | jq '.provider_schemas[\"registry.terraform.io/hashicorp/awscc\"].resource_schemas | keys[]' | grep bedrockagentcore` before relying on one. Observability needs no AgentCore resource: it is `aws_cloudwatch_log_delivery_source`/`_destination`/`aws_cloudwatch_log_delivery` plus the X-Ray Transaction Search setup, which has no dedicated hashicorp/aws resource this plugin verified, so it is emitted as `aws xray` CLI."
+}

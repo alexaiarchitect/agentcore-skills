@@ -1,0 +1,9 @@
+output "table_name" { value = aws_dynamodb_table.vault.name }
+output "table_arn" { value = aws_dynamodb_table.vault.arn }
+output "export_bucket_name" { value = aws_s3_bucket.exports.id }
+output "export_bucket_arn" { value = aws_s3_bucket.exports.arn }
+output "export_queue_url" { value = aws_sqs_queue.exports.id }
+output "export_queue_arn" { value = aws_sqs_queue.exports.arn }
+output "export_queue_name" { value = aws_sqs_queue.exports.name }
+output "export_dlq_arn" { value = aws_sqs_queue.exports_dlq.arn }
+output "export_dlq_name" { value = aws_sqs_queue.exports_dlq.name }

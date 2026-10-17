@@ -1,0 +1,29 @@
+[
+ {
+  "name": "lookup_book",
+  "description": "Find a book by title.",
+  "properties": [
+   {
+    "name": "title",
+    "type": "string",
+    "required": true
+   }
+  ]
+ },
+ {
+  "name": "reserve_book",
+  "description": "Reserve a copy.",
+  "properties": [
+   {
+    "name": "title",
+    "type": "string",
+    "required": true
+   },
+   {
+    "name": "member",
+    "type": "string",
+    "required": true
+   }
+  ]
+ }
+]

@@ -1,0 +1,82 @@
+{
+ "format_version": "1.2",
+ "terraform_version": "1.14.2",
+ "planned_values": {},
+ "resource_changes": [
+  {
+   "address": "module.agentcore_gateway.aws_bedrockagentcore_gateway.this",
+   "mode": "managed",
+   "type": "aws_bedrockagentcore_gateway",
+   "name": "this",
+   "change": {
+    "actions": [
+     "create"
+    ],
+    "before": null,
+    "after": {
+     "name": "vault",
+     "authorizer_type": "CUSTOM_JWT",
+     "protocol_configuration": [
+      {
+       "mcp": [
+        {
+         "supported_versions": [
+          "2025-11-25",
+          "2026-07-28"
+         ]
+        }
+       ]
+      }
+     ]
+    }
+   }
+  },
+  {
+   "address": "module.agentcore_gateway.aws_bedrockagentcore_gateway_target.vault",
+   "mode": "managed",
+   "type": "aws_bedrockagentcore_gateway_target",
+   "name": "vault",
+   "change": {
+    "actions": [
+     "create"
+    ],
+    "before": null,
+    "after": {}
+   }
+  },
+  {
+   "address": "module.agentcore_gateway.aws_iam_role_policy.gateway",
+   "mode": "managed",
+   "type": "aws_iam_role_policy",
+   "name": "gateway",
+   "change": {
+    "actions": [
+     "create"
+    ],
+    "before": null,
+    "after": {
+     "policy": "{\"Version\": \"2012-10-17\", \"Statement\": [{\"Effect\": \"Allow\", \"Action\": [\"lambda:InvokeFunction\"], \"Resource\": [\"arn:aws:lambda:eu-central-1:111122223333:function:x\"]}]}"
+    }
+   }
+  },
+  {
+   "address": "module.compute.aws_lambda_function.mcp",
+   "mode": "managed",
+   "type": "aws_lambda_function",
+   "name": "mcp",
+   "change": {
+    "actions": [
+     "update"
+    ],
+    "before": {},
+    "after": {
+     "tracing_config": [
+      {
+       "mode": "Active"
+      }
+     ]
+    }
+   }
+  }
+ ]
+}

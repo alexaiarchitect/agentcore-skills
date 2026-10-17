@@ -1,0 +1,17 @@
+{
+  "schema": "agentcore-skills.mcp-versions/1",
+  "checked": "2026-10-05",
+  "sources": [
+    "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-using.html",
+    "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-target-MCPservers.html",
+    "https://aws.amazon.com/blogs/machine-learning/how-agentcore-gateway-supports-the-mcp-2026-07-28-spec/",
+    "https://docs.aws.amazon.com/bedrock-agentcore/latest/devguide/gateway-sessions.html"
+  ],
+  "gateway_inbound": ["2025-03-26", "2025-06-18", "2025-11-25", "2026-07-28"],
+  "gateway_mcp_server_targets": ["2025-03-26", "2025-06-18", "2025-11-25", "2026-07-28"],
+  "opt_in": {"2026-07-28": "protocolConfiguration.mcp.supportedVersions (UpdateGateway replaces the list; it does not append)"},
+  "no_header_default": "2025-03-26",
+  "stateless": {"2026-07-28": "no initialize/initialized handshake, no Mcp-Session-Id; MCP-Protocol-Version and Mcp-Method headers plus params._meta io.modelcontextprotocol/protocolVersion, clientInfo, clientCapabilities on every request"},
+  "sessionful": {"2025-*": "initialize returns Mcp-Session-Id; default session timeout 3600 s, configurable 900-28800 s, absolute from the first initialize"},
+  "translation": "A 2025-* client can call ordinary tools on a 2026-07-28 target through the gateway; the translation does not support elicitation and sampling."
+}

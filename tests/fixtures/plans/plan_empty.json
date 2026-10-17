@@ -1,0 +1,19 @@
+{
+ "format_version": "1.2",
+ "planned_values": {},
+ "resource_changes": [
+  {
+   "address": "aws_s3_bucket.state",
+   "mode": "managed",
+   "type": "aws_s3_bucket",
+   "name": "state",
+   "change": {
+    "actions": [
+     "no-op"
+    ],
+    "before": {},
+    "after": {}
+   }
+  }
+ ]
+}

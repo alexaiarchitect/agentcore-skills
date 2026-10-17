@@ -1,0 +1,185 @@
+{
+ "TraceSummaries": [
+  {
+   "Id": "1-6ac4aa80-000000000000000000000000",
+   "Duration": 0.421,
+   "ResponseTime": 0.42,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4aabc-000000000000000000000001",
+   "Duration": 0.07,
+   "ResponseTime": 0.069,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4aaf8-000000000000000000000002",
+   "Duration": 0.059,
+   "ResponseTime": 0.058,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4ab34-000000000000000000000003",
+   "Duration": 0.066,
+   "ResponseTime": 0.065,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4ab70-000000000000000000000004",
+   "Duration": 0.079,
+   "ResponseTime": 0.078,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4abac-000000000000000000000005",
+   "Duration": 0.53,
+   "ResponseTime": 0.529,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4abe8-000000000000000000000006",
+   "Duration": 0.059,
+   "ResponseTime": 0.058,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4ac24-000000000000000000000007",
+   "Duration": 0.067,
+   "ResponseTime": 0.066,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4ac60-000000000000000000000008",
+   "Duration": 0.065,
+   "ResponseTime": 0.064,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4ac9c-000000000000000000000009",
+   "Duration": 0.074,
+   "ResponseTime": 0.073,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4acd8-00000000000000000000000a",
+   "Duration": 0.07,
+   "ResponseTime": 0.069,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4ad14-00000000000000000000000b",
+   "Duration": 0.434,
+   "ResponseTime": 0.433,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4ad50-00000000000000000000000c",
+   "Duration": 0.075,
+   "ResponseTime": 0.074,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4ad8c-00000000000000000000000d",
+   "Duration": 0.069,
+   "ResponseTime": 0.068,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4adc8-00000000000000000000000e",
+   "Duration": 0.068,
+   "ResponseTime": 0.067,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4ae04-00000000000000000000000f",
+   "Duration": 0.064,
+   "ResponseTime": 0.063,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4ae40-000000000000000000000010",
+   "Duration": 0.071,
+   "ResponseTime": 0.07,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4ae7c-000000000000000000000011",
+   "Duration": 0.511,
+   "ResponseTime": 0.51,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4aeb8-000000000000000000000012",
+   "Duration": 0.076,
+   "ResponseTime": 0.075,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4aef4-000000000000000000000013",
+   "Duration": 0.062,
+   "ResponseTime": 0.061,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4af30-000000000000000000000014",
+   "Duration": 0.082,
+   "ResponseTime": 0.081,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4af6c-000000000000000000000015",
+   "Duration": 0.07,
+   "ResponseTime": 0.069,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4afa8-000000000000000000000016",
+   "Duration": 0.435,
+   "ResponseTime": 0.434,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4afe4-000000000000000000000017",
+   "Duration": 0.07,
+   "ResponseTime": 0.069,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4b020-000000000000000000000018",
+   "Duration": 0.073,
+   "ResponseTime": 0.072,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4b05c-000000000000000000000019",
+   "Duration": 0.073,
+   "ResponseTime": 0.072,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4b098-00000000000000000000001a",
+   "Duration": 0.082,
+   "ResponseTime": 0.081,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4b0d4-00000000000000000000001b",
+   "Duration": 0.066,
+   "ResponseTime": 0.065,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4b110-00000000000000000000001c",
+   "Duration": 0.072,
+   "ResponseTime": 0.071,
+   "HasError": false
+  },
+  {
+   "Id": "1-6ac4b14c-00000000000000000000001d",
+   "Duration": 0.513,
+   "ResponseTime": 0.512,
+   "HasError": false
+  }
+ ],
+ "ApproximateTime": 1791273600.0
+}

@@ -1,0 +1,19 @@
+{
+  "name": "example-vault behind a gateway",
+  "region": "eu-central-1",
+  "days_per_month": 30,
+  "gateway": {
+    "requests_per_day": 2000,
+    "tool_calls_per_request": 1,
+    "list_calls_per_request": 0.2,
+    "other_calls_per_day": 0,
+    "search_calls_per_day": 0,
+    "tools_indexed": 14
+  },
+  "identity": {"token_requests_per_day": 2000, "via_runtime_or_gateway": true},
+  "memory": {"events_per_day": 4000, "avg_event_kb": 2, "long_term_records": 5000, "retrievals_per_day": 1000,
+             "strategy": "builtin"},
+  "runtime": {"sessions_per_day": 500, "avg_session_seconds": 20, "active_cpu_fraction": 0.25, "vcpu": 1,
+              "memory_gb": 2, "compute": "microvm_v2"},
+  "evaluations": {"evaluated_per_day": 50, "input_tokens_per_eval": 2000, "output_tokens_per_eval": 300}
+}
